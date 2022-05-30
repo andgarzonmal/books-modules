@@ -4,4 +4,4 @@ const book = ({ title, author, index }) => `
   <button class="removebook" id="removebook" value="Add Book" onclick="">Remove</button>
 </li>`;
 
-export default book
+export default book;

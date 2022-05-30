@@ -1,6 +1,6 @@
-import book from "./Modules/html.js";
-import { contact, addNewBook, showMyBooks } from "./Modules/SPA.js";
-import displayHour from "./Modules/date.js";
+import book from './Modules/html.js';
+import { contact, addNewBook, showMyBooks } from './Modules/SPA.js';
+import displayHour from './Modules/date.js';
 
 const title = document.querySelector('.title');
 const author = document.querySelector('.author');
@@ -61,7 +61,7 @@ listSelector.addEventListener('click', showMyBooks);
 addBooksSelector.addEventListener('click', addNewBook);
 contactSelector.addEventListener('click', contact);
 
-displayHour(clock)
+displayHour(clock);
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -69,7 +69,6 @@ form.addEventListener('submit', (e) => {
   myBooks.addhtml();
   myBooks.remove();
 });
-
 
 if (getmylibrary.length > 0) {
   myBooks.bookList = getmylibrary;
